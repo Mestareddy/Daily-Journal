@@ -1,6 +1,6 @@
 <%- include('../partials/header'); -%>
 <h1>
-    <%= title %>
+    Home
 </h1>
 <p>
     <%= content %>
@@ -10,7 +10,8 @@
     <% newPost.forEach((post) => { %>
     <h1><%= post.title %></h1>
     <p>
-        <%= post.content.substring(0, 100)+ "..." %> <a href="/pages/<%= post.title %>">Read More</a>
+        <%= post.content.substring(0, 100)+ "..." %>
+        <a href="/pages/<%= post._id %>">Read More</a>
     </p>
    <% }) %>
 </div>
